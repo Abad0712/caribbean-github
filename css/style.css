@@ -15,6 +15,14 @@ h1{
 
 }
 
+.color-nav{
+    background-color: aquamarine;
+}
+
+.navbar-collapse{
+    justify-content: center;
+}
+
 header{
     position: sticky;
     top: 0px;
@@ -105,6 +113,30 @@ main .titulosPrincipales{
     text-align: center;
     margin: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.row{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 15px;
+    margin: 10px;
+    align-items: center;
+
+}
+
+.grid-column{
+    background-color: aquamarine;
 }
 
 .contenedorCards{
