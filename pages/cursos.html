@@ -5,31 +5,131 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-cursos.css">
     <title>CARIBBEAN</title>
 </head>
 <body>
     <header>
-        <nav class="navBar">
-            <a href="../index.html">
-                <img src="../img/CARIBBEAN.png" alt="Logo Caribbean">
-            </a>
-            <ul class="listMenu">
-                <li class="itemList"><a href="../index.html">INICIO</a></li>
-                <li class="itemList"><a href="../pages/servicios.html">SERVICIOS</a></li>
-                <li class="itemList"><a href="../pages/productos.html">PRODUCTOS</a></li>
-                <li class="itemList"><a href="../pages/cursos.html">CURSOS</a></li>
-                <li class="itemList"><a href="../pages/tendencias.html">TENDENCIAS</a></li>
-                <li class="itemList"><a href="../pages/contacto.html">CONTACTO</a></li>
-            </ul>
-            <form action="#" class="busqueda">
-                <input type="search" placeholder="Que servicio deseas realizar" name="busqueda">
-            </form>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav__container">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                <img class="logo" src="../img/CARIBBEAN.png" alt="Logo Caribbean">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/cursos.html">Cursos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/tendencias.html">Tendencias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/contacto.html">Contacto</a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li> -->
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Ingresar búsqueda..." aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main class="main-cursos">
         <h1 class="titulosPrincipales">CURSOS</h1>
+          <br><br>
+        <h3 class="titulosSegundarios">CURSO INICIAL DE MANICURIA</h3>
+     
+      <div class="grid-container-cursos container-fluid">
+        <p class="p-cursos">Modalidad: Presencial
+          <br><br>
+          Un curso súper completo que está dirigido a aquellas personas que se inician en el mundo de la uñas o bien para aquellas personas que quieren complementar, adquirir o perfeccionar su técnica en uñas de manera fácil y rápida. Obtendrás todo el conocimiento necesario para poder implementar los procedimientos y cuidados correctos sobre las uñas de nuestras clientas o nosotras mismas.</p>
+        <div class="container-img"> <img src="../img/curso-inicial-manicuria.jpg" alt="pedicure"></div>
+      </div>
+      <div class="container">  
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                ¿Qué temas veremos en este curso?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                El temario de este curso va dirigido a aprender y practicar Manicuría Combinada con la utilización de distintos instrumentos. Realizar un <strong>Esmaltado Semipermanente</strong> con las técnicas correctas, tips y cuidados para una duración extensa. Elaborar un servicio de <strong>Capping</strong> mediante el uso de gel y limado para la protección de la uña natural.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                ¿Cómo es la cursada?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Tenes dos modalidades disponibles:
+                <br>
+                <strong>Intensivo:</strong> 10 clases consecutivas de 1:30 horas, de Lunes A Viernes.
+                <br>
+                <strong>Regular:</strong> 5 clases de 3 horas, 1 vez por semana los días Domingos.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                ¿Los materiales están incluidos?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Si, los materiales necesarios para cada técnica y que utilizarás en las prácticas dentro del curso, serán brindados por CARIBBEAN para que tu aprendizaje y experiencia sean completos.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <p class="p-cursos"Medios de pago>
+        <br><br>
+        Tarjetas de Crédito: Hasta 3 cuotas sin interés.
+        <br><br>
+        Tarjetas de Débito.
+        <br><br>
+        Mercado Pago.
+        <br><br>
+        Efectivo.</p>
     </main>
 
     <footer>

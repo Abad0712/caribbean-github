@@ -25,12 +25,6 @@
 /*------------------Fuentes fin------------------------*/
 
 /*----------------------Navbar inicio--------------------------------*/
-.nav__posicion{
-    position: sticky;
-    top: 0px;
-    z-index: 10;
-}
-
 .nav__container {
     background-color: var(--black) !important;
 }
@@ -84,143 +78,59 @@ main .titulosPrincipales{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-main .grid-container{
-    max-width: 900px;
+main .titulosSegundarios{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main .p-cursos{
+    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.grid-container-cursos{
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     align-items: center;
     justify-content: center;
     justify-items: center;
     grid-row-gap: 20px;
 }
 
-main .grid-container div{
-    height: 250px;
-    width: 250;
-    overflow: hidden;
-}
-
-main .grid-container img{
-    width: 250px;
-}
-
-main .banner{
-    width: 100%;
+main .container-img{
     height: 400px;
+    width: 700px;
+    overflow: hidden;
+    margin: 25px;
 }
 
-main .contenido-servicios{
-    text-align: center;
-    padding: 0px 0px 30px 0px;
+.accordion-button:not(.collapsed)::after {
+    /* background-image: var(--bs-accordion-btn-active-icon); */
+    transform: var(--bs-accordion-btn-icon-transform);
 }
 
-.row{
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: nowrap;
-    margin-top: calc(-1 * var(--bs-gutter-y));
-    margin-right: calc(-.5 * var(--bs-gutter-x));
-    margin-left: calc(-.5 * var(--bs-gutter-x));
+.accordion-button::after {
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    margin-left: auto;
+    content: "";
+    background-image: var(--bs-accordion-btn-icon);
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
+}
+*, ::after, ::before {
+    box-sizing: border-box;
 }
 
-.card{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    border-radius: 15px;
-    margin: 10px;
-    align-items: center;
-
-}
-
-.grid-column{
-    background-color: aquamarine;
-}
-
-.contenedorCards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.contenedorCards .card1{
-    width: 18rem;
-    height: 25rem;
-    padding: 1rem;
-    background-color: pink;
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 15px;
-}
-
-.contenedorCards .card1 .contenedorimagencard .imgcard{
-    width: 100%;
-    height: 20rem;
-    border-radius: 15px;
-}
-
-.contenedorCards .card1 .contenedortextocard .titulocard{
-   color: black;
-   font-size: 25px;
-   text-align: center;
-   margin: 10px;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.contenedorCards .card2{
-    width: 18rem;
-    height: 25rem;
-    padding: 1rem;
-    background-color: pink;
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 15px;
-}
-
-.contenedorCards .card2 .contenedorimagencard .imgcard{
-    width: 100%;
-    height: 20rem;
-    border-radius: 15px;
-}
-
-.contenedorCards .card2 .contenedortextocard .titulocard{
-   color: black;
-   font-size: 25px;
-   text-align: center;
-   margin: 10px;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.contenedorCards .card3{
-    width: 18rem;
-    height: 25rem;
-    padding: 1rem;
-    background-color: pink;
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 15px;
-}
-
-.contenedorCards .card3 .contenedorimagencard .imgcard{
-    width: 100%;
-    height: 20rem;
-    border-radius: 15px;
-}
-
-.contenedorCards .card3 .contenedortextocard .titulocard{
-   color: black;
-   font-size: 25px;
-   text-align: center;
-   margin: 10px;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.accordion-button{
+    --bs-accordion-active-bg: #ffeefd;
+    --bs-accordion-active-color: ;
 }
 /*--------------------Main fin--------------------------------*/
 
@@ -253,3 +163,11 @@ footer .footer  .itemList a img{
     margin-right: 15px;
 }
 /*--------------------Footer fin--------------------------------*/
+
+/*--------------------Media inicio--------------------------------*/
+@media (max-width: 1400px){
+    .grid-container-cursos{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+/*--------------------Media fin--------------------------------*/
